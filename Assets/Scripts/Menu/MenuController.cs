@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class MenuController : MonoBehaviour {
 
     public Text[] statesText;
+    public AudioClip[] soundsEffects;
 
     int state;
     int maxStates;
@@ -21,10 +22,13 @@ public class MenuController : MonoBehaviour {
         ShowState();
         if(Input.GetKeyDown(KeyCode.LeftArrow) && state > 1) {
             state--;
+            AudioSource.PlayClipAtPoint(soundsEffects[0], transform.position);
         } else if(Input.GetKeyDown(KeyCode.RightArrow) && state < maxStates) {
             state++;
+            AudioSource.PlayClipAtPoint(soundsEffects[0], transform.position);
         }
         if(Input.GetKeyDown(KeyCode.Return)) {
+            AudioSource.PlayClipAtPoint(soundsEffects[1], transform.position);
             string selected = System.Enum.GetName(typeof(StateSelect), state - 1);
             if (selected == "Exit") Application.Quit();
             else SceneManager.LoadScene(selected);
