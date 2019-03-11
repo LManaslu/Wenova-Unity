@@ -128,10 +128,10 @@ TextureImporter:
       name: RedShip_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 384
-        height: 248
+        x: 14
+        y: 8
+        width: 363
+        height: 223
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,7 +139,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11d6c0087639df04285ab1fbbebf2165
+      spriteID: ef48eee24cb66f2449b8206571aa63b4
       vertices: []
       indices: 
       edges: []
@@ -148,10 +148,10 @@ TextureImporter:
       name: RedShip_1
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 384
-        height: 248
+        x: 398
+        y: 8
+        width: 363
+        height: 222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,7 +159,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a07102ed752adb49b41911a889dfa48
+      spriteID: 42bb9b04839b17e4c8adad1643d9f8f8
       vertices: []
       indices: 
       edges: []
@@ -168,10 +168,10 @@ TextureImporter:
       name: RedShip_2
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 384
-        height: 248
+        x: 782
+        y: 8
+        width: 363
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,7 +179,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18dde969841a71147b226605d8d11455
+      spriteID: 3e0be57bab13ac64ea69ab9efa9ec7d8
       vertices: []
       indices: 
       edges: []
@@ -188,10 +188,10 @@ TextureImporter:
       name: RedShip_3
       rect:
         serializedVersion: 2
-        x: 1152
-        y: 0
-        width: 384
-        height: 248
+        x: 1166
+        y: 8
+        width: 363
+        height: 217
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,7 +199,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36af2d4f66788824d8da70b0c265794c
+      spriteID: 54fb8303591afff4bb73815a3ed8aa43
       vertices: []
       indices: 
       edges: []
@@ -208,10 +208,10 @@ TextureImporter:
       name: RedShip_4
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 384
-        height: 248
+        x: 1550
+        y: 5
+        width: 363
+        height: 219
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,7 +219,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1eef1e01b6b543c44807253e282225e1
+      spriteID: d4eca0a15e6afed47b1e47fe9c06dab7
       vertices: []
       indices: 
       edges: []
@@ -228,10 +228,10 @@ TextureImporter:
       name: RedShip_5
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 0
-        width: 384
-        height: 248
+        x: 1934
+        y: 5
+        width: 363
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,7 +239,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13c033d50a753994bbfec5d1e3d8dce5
+      spriteID: 0ec1b4bea0a2c274c9a40efff7bdbd2c
       vertices: []
       indices: 
       edges: []
@@ -248,10 +248,10 @@ TextureImporter:
       name: RedShip_6
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 0
-        width: 384
-        height: 248
+        x: 2318
+        y: 5
+        width: 363
+        height: 223
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,7 +259,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7653a6c1e94761a49bd27b7cbfb7daa7
+      spriteID: 0c00657b7c6291f44b86a6bb6f70e029
       vertices: []
       indices: 
       edges: []
@@ -268,10 +268,10 @@ TextureImporter:
       name: RedShip_7
       rect:
         serializedVersion: 2
-        x: 2688
-        y: 0
-        width: 384
-        height: 248
+        x: 2702
+        y: 5
+        width: 363
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,7 +279,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f80b877681e8f54ea23907cb54a8e05
+      spriteID: 62ac09cf88dcb1f4fabf139751052ef7
       vertices: []
       indices: 
       edges: []
