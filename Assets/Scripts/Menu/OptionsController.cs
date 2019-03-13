@@ -9,6 +9,7 @@ public class OptionsController : MonoBehaviour {
     public Text[] optionsTexts;
     public Text resolutionText;
     public Text fullscreenText;
+    public AudioClip[] soundsEffects;
 
     int index;
     int resolutionIndex = 0;
@@ -29,21 +30,30 @@ public class OptionsController : MonoBehaviour {
         fullscreenText.text = full ? "On" : "Off";
         Screen.SetResolution((int)resol[resolutionIndex].x, (int)resol[resolutionIndex].y, full);
         if(Input.GetKeyDown(KeyCode.Escape)) {
-            SceneManager.LoadScene("Menu");
-        } else if(Input.GetKeyDown(KeyCode.DownArrow) && index < optionsTexts.Length - 1) {
+            AudioSource.PlayClipAtPoint(soundsEffects[2], transform.position);
+            StartCoroutine(DelayLoadScene("Menu"));
+        }else if(Input.GetKeyDown(KeyCode.DownArrow) && index < optionsTexts.Length - 1) {
+            AudioSource.PlayClipAtPoint(soundsEffects[0], transform.position);
             optionsTexts[index].color = Color.white;
             index++;
         } else if(Input.GetKeyDown(KeyCode.UpArrow) && index > 0) {
+            AudioSource.PlayClipAtPoint(soundsEffects[0], transform.position);
             optionsTexts[index].color = Color.white;
             index--;
         } else if(Input.GetKeyDown(KeyCode.Return)) {
+            AudioSource.PlayClipAtPoint(soundsEffects[1], transform.position);
             string selected = System.Enum.GetName(typeof(Options), index);
-            if(selected == "Back") SceneManager.LoadScene("Menu");
+            if(selected == "Back") StartCoroutine(DelayLoadScene("Menu"));
             else if(selected == "Fullscreen") full = !full;
             else if(selected == "Resolution") {
                 resolutionIndex++;
                 if(resolutionIndex > resolutions.Length - 1) resolutionIndex = 0;
-            } else SceneManager.LoadScene(selected);
+            } else StartCoroutine(DelayLoadScene(selected));
         }
+    }
+
+    IEnumerator DelayLoadScene(string sceneName) {
+        yield return new WaitForSeconds(0.2f);
+        SceneManager.LoadScene(sceneName);
     }
 }

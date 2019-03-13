@@ -21,7 +21,7 @@ public class SoundController : MonoBehaviour {
 
     static public void PlayMenuMusic() {
         if(instance != null) {
-            if(instance.source != null) {
+            if(instance.source != null && instance.source.clip != instance.menuMusic) {
                 instance.source.Stop();
                 instance.source.clip = instance.menuMusic;
                 instance.source.Play();

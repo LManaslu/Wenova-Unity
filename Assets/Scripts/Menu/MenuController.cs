@@ -32,7 +32,7 @@ public class MenuController : MonoBehaviour {
             AudioSource.PlayClipAtPoint(soundsEffects[1], transform.position);
             string selected = System.Enum.GetName(typeof(StateSelect), state - 1);
             if (selected == "Exit") Application.Quit();
-            else SceneManager.LoadScene(selected);
+            else StartCoroutine(DelayLoadScene(selected));
         }
     }
 
@@ -50,5 +50,10 @@ public class MenuController : MonoBehaviour {
             statesText[1].text = "Exit";
             statesText[2].text = "";
         }
+    }
+
+    IEnumerator DelayLoadScene(string sceneName) {
+        yield return new WaitForSeconds(0.2f);
+        SceneManager.LoadScene(sceneName);
     }
 }
