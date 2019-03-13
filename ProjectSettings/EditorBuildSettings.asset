@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Options.unity
     guid: 1132141b533b55547af86dceca7c4061
+  - enabled: 1
+    path: Assets/Scenes/Joystick.unity
+    guid: e92f65c4f7256554ba91b317bcd0e065
+  - enabled: 1
+    path: Assets/Scenes/Keyboard.unity
+    guid: efd28d2f03d70eb429a3e984fa38d307
   m_configObjects: {}

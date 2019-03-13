@@ -43,7 +43,7 @@ public class OptionsController : MonoBehaviour {
             else if(selected == "Resolution") {
                 resolutionIndex++;
                 if(resolutionIndex > resolutions.Length - 1) resolutionIndex = 0;
-            }
+            } else SceneManager.LoadScene(selected);
         }
     }
 }
