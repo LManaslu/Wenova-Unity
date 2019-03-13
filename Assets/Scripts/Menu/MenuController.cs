@@ -16,6 +16,7 @@ public class MenuController : MonoBehaviour {
     void Start() {
         state = 1;
         maxStates = statesText.Length;
+        SoundController.PlayMenuMusic();
     }
 
     void Update() {
