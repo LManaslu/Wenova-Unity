@@ -12,7 +12,7 @@ public class MenuController : MonoBehaviour {
 
     int state;
     int maxStates;
-    enum StateSelect {StageSelect, Options, Exit};
+    enum StateSelect {StageSelector, Options, Exit};
     DataController data;
 
     void Start() {
