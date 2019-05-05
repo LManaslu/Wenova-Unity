@@ -6,6 +6,7 @@ public class DataController : MonoBehaviour {
 
     public int indexResolution = 0;
     public bool full = true;
+    public bool started = false;
     static public DataController instance;
 
     void Awake() {

@@ -15,7 +15,7 @@ public class OptionsController : MonoBehaviour {
     bool full = true;
     string[] resolutions = {"1920 x 1080", "1280 x 720", "800 x 600"};
     DataController data;
-    enum Options {Resolution, Fullscreen, Keyboard, Joystick, Back};
+    enum Options {Resolution, Fullscreen, Joystick, Keyboard, Back};
     [SerializeField] Vector2[] resol;
 
     // Start is called before the first frame update
