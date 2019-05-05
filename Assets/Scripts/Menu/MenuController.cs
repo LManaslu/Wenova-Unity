@@ -28,7 +28,7 @@ public class MenuController : MonoBehaviour {
         if(Input.GetKeyDown(KeyCode.Escape) && data.started) {
             AudioSource.PlayClipAtPoint(soundsEffects[2], transform.position);
             data.started = false;
-        } else if (Input.GetKeyDown(KeyCode.LeftArrow) && state > 1 && data.started) {
+        } else if(Input.GetKeyDown(KeyCode.LeftArrow) && state > 1 && data.started) {
             state--;
             AudioSource.PlayClipAtPoint(soundsEffects[0], transform.position);
         } else if(Input.GetKeyDown(KeyCode.RightArrow) && state < maxStates && data.started) {

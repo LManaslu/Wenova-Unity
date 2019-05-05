@@ -19,16 +19,31 @@ public class StageController : MonoBehaviour {
         maxStages = stageImages.Length;
         stage = 1;
         data = FindObjectOfType<DataController>();
+        Debug.Log(data.stage);
     }
 
     // Update is called once per frame
     void Update() {
         StageImage();
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && stage > 1) {
+        if(Input.GetKeyDown(KeyCode.Escape)) {
+            StartCoroutine(DelayLoadScene("Menu"));
+        }
+        if(Input.GetKeyDown(KeyCode.LeftArrow) && stage > 1) {
             stage--;
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow) && stage < maxStages) {
+        else if(Input.GetKeyDown(KeyCode.RightArrow) && stage < maxStages) {
             stage++;
+        }
+        if(Input.GetKeyDown(KeyCode.Return)) {
+            string selected = System.Enum.GetName(typeof(Stages), stage - 1);
+            if(selected == "Random") {
+                string[] stgs = {"Waterfalls", "Mangrove"};
+                int id = Random.Range(0, maxStages - 1);
+                data.stage = stgs[id];
+            } else {
+                data.stage = selected;
+            }
+            StartCoroutine(DelayLoadScene("CharacterSelector"));
         }
     }
 
@@ -49,5 +64,10 @@ public class StageController : MonoBehaviour {
             stageImages[2].GetComponent<SpriteRenderer>().sprite = null;
             stageText.text = "Random";
         }
+    }
+
+    IEnumerator DelayLoadScene(string sceneName) {
+        yield return new WaitForSeconds(0.2f);
+        SceneManager.LoadScene(sceneName);
     }
 }
