@@ -8,12 +8,13 @@ public class StageController : MonoBehaviour {
 
     public GameObject[] stageImages;
     public Sprite[] images;
+    public AudioClip[] soundsEffects;
     public Text stageText;
 
     int maxStages, stage;
     enum Stages {Waterfalls, Mangrove, Random}
     DataController data;
-    
+
     // Start is called before the first frame update
     void Start() {
         maxStages = stageImages.Length;
@@ -26,12 +27,15 @@ public class StageController : MonoBehaviour {
     void Update() {
         StageImage();
         if(Input.GetKeyDown(KeyCode.Escape)) {
+            AudioSource.PlayClipAtPoint(soundsEffects[2], transform.position);
             StartCoroutine(DelayLoadScene("Menu"));
         }
         if(Input.GetKeyDown(KeyCode.LeftArrow) && stage > 1) {
+            AudioSource.PlayClipAtPoint(soundsEffects[0], transform.position);
             stage--;
         }
         else if(Input.GetKeyDown(KeyCode.RightArrow) && stage < maxStages) {
+            AudioSource.PlayClipAtPoint(soundsEffects[0], transform.position);
             stage++;
         }
         if(Input.GetKeyDown(KeyCode.Return)) {
@@ -43,6 +47,7 @@ public class StageController : MonoBehaviour {
             } else {
                 data.stage = selected;
             }
+            AudioSource.PlayClipAtPoint(soundsEffects[1], transform.position);
             StartCoroutine(DelayLoadScene("CharacterSelector"));
         }
     }

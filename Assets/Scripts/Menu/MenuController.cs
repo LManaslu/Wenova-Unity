@@ -36,7 +36,10 @@ public class MenuController : MonoBehaviour {
             AudioSource.PlayClipAtPoint(soundsEffects[0], transform.position);
         }
         if(Input.GetKeyDown(KeyCode.Return)) {
-            if (!data.started) data.started = true;
+            if (!data.started) {
+                AudioSource.PlayClipAtPoint(soundsEffects[1], transform.position);
+                data.started = true;
+            }
             else {
                 AudioSource.PlayClipAtPoint(soundsEffects[1], transform.position);
                 string selected = System.Enum.GetName(typeof(StateSelect), state - 1);

@@ -811,6 +811,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6c9f6fa060acf0541af963389c17648b, type: 3}
   - {fileID: 21300000, guid: d840d71ebe1be5b46a3ba6a43c29ae3c, type: 3}
   - {fileID: 21300000, guid: ff2417b4e9c68094b9cfccdf325baded, type: 3}
+  soundsEffects:
+  - {fileID: 8300000, guid: 761a9e99aac19ea40a88c7993fec4dee, type: 3}
+  - {fileID: 8300000, guid: 7114c6d84c8e7004191e1ac483422e6d, type: 3}
+  - {fileID: 8300000, guid: 2bf12f4d746ae04428a3f2ddcb1171e8, type: 3}
   stageText: {fileID: 1954132408}
 --- !u!1 &1954132406
 GameObject:
