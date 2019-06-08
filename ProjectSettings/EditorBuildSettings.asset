@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Keyboard.unity
     guid: efd28d2f03d70eb429a3e984fa38d307
+  - enabled: 1
+    path: Assets/Scenes/Waterfalls.unity
+    guid: 42c957e43a5995040a8eacd47bceb4bb
   m_configObjects: {}

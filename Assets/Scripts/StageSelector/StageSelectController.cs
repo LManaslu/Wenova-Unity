@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class StageController : MonoBehaviour {
+public class StageSelectController : MonoBehaviour {
 
     public GameObject[] stageImages;
     public Sprite[] images;
