@@ -143,5 +143,5 @@ MonoBehaviour:
   menuMusic: {fileID: 8300000, guid: ef2d5bf0fe4b9404aa854e262fd4c084, type: 3}
   levelsMusics:
   - {fileID: 8300000, guid: a93d9d2b648060f4f996aa9214c98575, type: 3}
-  - {fileID: 8300000, guid: a93d9d2b648060f4f996aa9214c98575, type: 3}
+  - {fileID: 8300000, guid: eca16bc26e397e24f8020f3775b00f82, type: 3}
   source: {fileID: 4408009608787006524}

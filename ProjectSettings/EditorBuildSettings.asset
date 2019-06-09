@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Waterfalls.unity
     guid: 42c957e43a5995040a8eacd47bceb4bb
+  - enabled: 1
+    path: Assets/Scenes/Mangrove.unity
+    guid: 90d4834c64a16d44da7c50b6530e9dc9
   m_configObjects: {}
