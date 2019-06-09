@@ -48,7 +48,7 @@ public class StageSelectController : MonoBehaviour {
                 data.stage = selected;
             }
             AudioSource.PlayClipAtPoint(soundsEffects[1], transform.position);
-            StartCoroutine(DelayLoadScene(data.stage));
+            StartCoroutine(DelayLoadScene("CharacterSelector"));
         }
     }
 
